@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI - Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app">
+  <div class="card">
+    <h1 class="title">Kalkulator BMI</h1>
+    <p class="subtitle">Hitung Indeks Massa Tubuh Anda. Masukkan tinggi dan berat badan Anda di bawah.</p>
+    
+<!-- Pilihan Jenis Kelamin -->
+      <div class="form-group">
+        <label>Jenis Kelamin</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="laki-laki"> Laki-laki</label>
+          <label><input type="radio" name="gender" value="perempuan"> Perempuan</label>
+        </div>
+
+        <form id="bmi-form" class="form">
+      <!-- Metrik Tinggi -->
+      <div id="metric-height" class="form-group">
+        <label for="height-metric">Tinggi</label>
+        <input type="number" id="height-metric" placeholder="Tinggi dalam centimeter">
+        <p class="unit-label"> centimeter</p>
+      </div>
+
+      <!-- Berat Badan -->
+      <div class="form-group">
+        <label for="weight-input">Berat Badan</label>
+        <input type="number" step="0.1" id="weight-input" placeholder="Berat dalam kilogram">
+        <small class="note" id="weight-unit"> kilogram</small>
+      </div>
+
+      <!-- Pesan Kesalahan -->
+      <p id="error-message" class="error hidden">Mohon isi semua kolom dengan angka positif yang valid.</p>
+      <p id="error-gender" class="error hidden">Mohon pilih jenis kelamin Anda</p>
+
+      <!-- Tombol -->
+      <button type="submit" class="btn">Hitung BMI</button>
+    </form>
+
+    <!-- Hasil -->
+    <div id="result" class="result hidden">
+      <h2>Hasil BMI Anda</h2>
+      <p id="bmi-value" class="bmi-value">0.0</p>
+      <p id="bmi-category" class="bmi-category">Menghitung...</p>
+    </div>
+
+    <!-- Kategori -->
+    <div class="categories">
+      <h3>Kategori BMI</h3>
+      <ul>
+        <li><strong>Di bawah 18.5:</strong> Kurus</li>
+        <li><strong>18.5 - 24.9:</strong> Normal</li>
+        <li><strong>25 - 29.9:</strong> Gemuk</li>
+        <li><strong>30 ke atas:</strong> Obesitas</li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
