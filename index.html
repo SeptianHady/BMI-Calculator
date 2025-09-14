@@ -18,6 +18,8 @@
           <label><input type="radio" name="gender" value="laki-laki"> Laki-laki</label>
           <label><input type="radio" name="gender" value="perempuan"> Perempuan</label>
         </div>
+        <p id="gender-error" class="error hidden">Mohon pilih jenis kelamin Anda</p>
+      </div>
 
         <form id="bmi-form" class="form">
       <!-- Metrik Tinggi -->
@@ -36,8 +38,6 @@
 
       <!-- Pesan Kesalahan -->
       <p id="error-message" class="error hidden">Mohon isi semua kolom dengan angka positif yang valid.</p>
-      <p id="error-gender" class="error hidden">Mohon pilih jenis kelamin Anda</p>
-
       <!-- Tombol -->
       <button type="submit" class="btn">Hitung BMI</button>
     </form>
