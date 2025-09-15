@@ -20,7 +20,7 @@ const bmiCategory = document.getElementById('bmi-category');
     errorInput.classList.remove('hidden');
     valid = false;
   } else {
-    errorMsg.classList.add('hidden');
+    errorInput.classList.add('hidden');
   }
   
   if (!valid) {
@@ -46,7 +46,6 @@ const bmiCategory = document.getElementById('bmi-category');
     categoryClass = "category-obesitas";
   }
 
-  bmiCategory.textContent = bmi;
   bmiCategory.textContent = kategori;
   bmiCategory.className = "bmi-category " + categoryClass;
   resultDiv.classList.remove('hidden');
