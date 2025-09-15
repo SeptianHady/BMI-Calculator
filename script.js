@@ -1,3 +1,7 @@
+function hitungBMI() {
+  console.clear();
+  console.log("hitungBMI called");
+
 const tinggi = parseFloat(document.getElementById('tinggi').value) / 100;
 const berat = parseFloat(document.getElementById('berat').value);
 const gender = document.querySelector('input[name="gender"]:checked');
@@ -25,6 +29,7 @@ const bmiCategory = document.getElementById('bmi-category');
   
   if (!valid) {
     resultDiv.classList.add('hidden');
+    console.log("Invalid input");
     return;
   }
 
@@ -46,6 +51,10 @@ const bmiCategory = document.getElementById('bmi-category');
     categoryClass = "category-obesitas";
   }
 
-  bmiCategory.textContent = kategori;
+  bmiValue.textContent = bmi;
+  bmiValue.className = "bmi-value " + categoryClass;
+  bmiCategory.textContent = category;
   bmiCategory.className = "bmi-category " + categoryClass;
   resultDiv.classList.remove('hidden');
+
+}
