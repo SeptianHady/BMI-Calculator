@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body.app {
+body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom right, #24f309, #5a87b9);
   color: #333;
@@ -24,6 +24,11 @@ body.app {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 10rem;
+
+}
 .title {
   text-align: center;
   font-size: 24px;
@@ -35,12 +40,6 @@ body.app {
   font-size: 14px;
   color: #555;
   margin-bottom: 20px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 .form-group {
@@ -70,13 +69,6 @@ input[type="number"] {
   margin-top: 1px;
 }
 
-.unit-label,
-.note {
-  font-size: 12px;
-  color: #666;
-  margin-top: 4px;
-}
-
 .error {
   color: #d9534f;
   font-size: 14px;
@@ -89,6 +81,7 @@ input[type="number"] {
 
 .btn {
   padding: 12px;
+  width: 100%;
   font-size: 16px;
   background: #4caf50;
   color: white;
@@ -132,17 +125,4 @@ input[type="number"] {
 
 .category-obese {
   color: #e53935;
-}
-
-.categories {
-  margin-top: 25px;
-}
-
-.categories h3 {
-  margin-bottom: 8px;
-  font-size: 15px;
-}
-
-.categories ul {
-  list-style: none;
 }

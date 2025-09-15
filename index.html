@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalkulator BMI - Sederhana</title>
+  <title>Kalkulator BMI</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="app">
@@ -18,11 +18,10 @@
           <label><input type="radio" name="gender" value="laki-laki"> Laki-laki</label>
           <label><input type="radio" name="gender" value="perempuan"> Perempuan</label>
         </div>
-        <p id="gender-error" class="error hidden">Mohon pilih jenis kelamin Anda</p>
+        <p id="error-gender" class="error hidden">Mohon pilih jenis kelamin Anda</p>
       </div>
 
         <form id="bmi-form" class="form">
-      <!-- Metrik Tinggi -->
       <div id="metric-height" class="form-group">
         <label for="height-metric">Tinggi</label>
         <input type="number" id="height-metric" placeholder="Tinggi dalam centimeter">
