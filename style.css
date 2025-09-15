@@ -111,7 +111,7 @@ input[type="number"] {
   font-weight: bold;
 }
 
-.category-underweight {
+.category-kurus {
   color: #1e88e5;
 }
 
@@ -119,10 +119,10 @@ input[type="number"] {
   color: #43a047;
 }
 
-.category-overweight {
+.category-gemuk {
   color: #fb8c00;
 }
 
-.category-obese {
+.category-obesitas {
   color: #e53935;
 }
