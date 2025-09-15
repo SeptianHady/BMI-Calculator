@@ -82,6 +82,7 @@ input[type="number"] {
 .btn {
   padding: 12px;
   width: 100%;
+  margin-top: 2rem;
   font-size: 16px;
   background: #4caf50;
   color: white;
@@ -109,6 +110,17 @@ input[type="number"] {
 .bmi-category {
   font-size: 16px;
   font-weight: bold;
+}
+
+.categories {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.categories ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .category-kurus {

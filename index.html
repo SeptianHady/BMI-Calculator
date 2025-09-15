@@ -21,25 +21,23 @@
         <p id="error-gender" class="error hidden">Mohon pilih jenis kelamin Anda</p>
       </div>
 
-        <form id="bmi-form" class="form">
-      <div id="metric-height" class="form-group">
-        <label for="height-metric">Tinggi</label>
-        <input type="number" id="height-metric" placeholder="Tinggi dalam centimeter">
-        <p class="unit-label"> centimeter</p>
+      <!-- Tinggi -->
+      <div class="form-group">
+        <label for="tinggi">Tinggi</label>
+        <input type="number" id="tinggi" placeholder="Tinggi dalam centimeter">
       </div>
 
       <!-- Berat Badan -->
       <div class="form-group">
-        <label for="weight-input">Berat Badan</label>
-        <input type="number" step="0.1" id="weight-input" placeholder="Berat dalam kilogram">
-        <small class="note" id="weight-unit"> kilogram</small>
+        <label for="berat">Berat Badan</label>
+        <input type="number" id="berat" placeholder="Berat dalam kilogram">
       </div>
 
       <!-- Pesan Kesalahan -->
       <p id="error-message" class="error hidden">Mohon isi semua kolom dengan angka positif yang valid.</p>
+
       <!-- Tombol -->
       <button type="submit" class="btn">Hitung BMI</button>
-    </form>
 
     <!-- Hasil -->
     <div id="result" class="result hidden">
