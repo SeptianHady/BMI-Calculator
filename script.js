@@ -4,16 +4,24 @@ function hitungBMI() {
 
 const tinggi = parseFloat(document.getElementById('tinggi').value) / 100;
 const berat = parseFloat(document.getElementById('berat').value);
-const gender = document.querySelector('input[name="gender"]:checked');
+const genderInput = document.getElementsByName("gender");
 const errorInput = document.getElementById('error-input');
 const errorGender = document.getElementById('error-gender');
 const resultDiv = document.getElementById('result');
 const bmiValue = document.getElementById('bmi-value');
 const bmiCategory = document.getElementById('bmi-category');
 
+let gender = "";
+for (let i = 0; i < genderInput.length; i++) {
+  if (genderInput[i].checked) {
+    gender = genderInput[i].value;
+    break;
+  }
+}
+
   let valid = true;
 
-  if (!gender) {
+  if (gender === "") {
     errorGender.classList.remove('hidden');
     valid = false;
   } else {
